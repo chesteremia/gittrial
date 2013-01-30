@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<time.h>
+
+main(){
+ int n = 200000, i;
+
+ time_t t1,t2;
+
+  t1= time(NULL);
+
+  for(i=0;i<n;i++)
+	printf("%d", i+1);
+
+  t2=time(NULL);
+  printf("Time elapsed: %f", (float)(t2-t1));
+
+	
+}
